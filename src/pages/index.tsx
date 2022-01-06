@@ -4,6 +4,7 @@ import { Abilities } from '../components/Abilities';
 import { About } from '../components/About';
 import { Hero } from '../components/Hero';
 import { Navbar } from '../components/Navbar';
+import { Projetcts } from '../components/Projects';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Hero />
       <About />
       <Abilities />
+      <Projetcts />
     </>
   );
 };
