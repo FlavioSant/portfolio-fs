@@ -1,24 +1,32 @@
 @use '../styles/breakpoints.scss';
 
-@keyframes openedMenuBackground {
+@keyframes openedMenu {
   from {
-    opacity: 0;
+    overflow: hidden;
   }
   to {
-    opacity: 1;
+    overflow: visible;
   }
 }
 
 .navbar-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
 
-  padding: 1rem 0.5rem 0 0.5rem;
+  background: var(--background);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding: 1rem 0.5rem;
+
+  width: 100%;
+  height: fit-content;
+  z-index: 2;
 }
 
 .navbar-logo {
+  cursor: pointer;
   width: 42px;
   height: 42px;
   z-index: 2;
@@ -29,60 +37,71 @@
   }
 }
 
-.navbar-nav-overlay {
-  display: none;
-  animation: openedMenuBackground 0.375s;
-  background: linear-gradient(
-    0deg,
-    rgba(29, 42, 92, 0.25) 20%,
-    rgba(245, 246, 250, 0) 100%
-  );
-  backdrop-filter: blur(0.5px);
-
-  position: fixed;
-  top: 0;
-  left: 0;
-
+.navbar-navigation-container {
   width: 100%;
-  height: 100%;
-
-  z-index: 1;
-
-  @include breakpoints.and-up(lg) {
-    display: block;
-    background: transparent;
-    position: initial;
-    width: fit-content;
-  }
-}
-
-.nav-container {
-  position: relative;
 
   ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.675rem;
-    border-top: 1px solid var(--primary);
-
-    padding-top: 1rem;
+    gap: 1rem;
 
     position: absolute;
-    top: 5rem;
-    left: 0;
-    width: 100%;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
 
-    @include breakpoints.and-up(lg) {
+    border-top: 1px solid var(--primary);
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  @include breakpoints.and-up(lg) {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
       flex-direction: row;
       gap: 1.5rem;
-      position: initial;
-      border-top: none;
+
+      margin-top: 0;
       padding-top: 0;
+      border-top: none;
+      position: initial;
+      overflow: visible;
+      width: auto;
+      height: auto;
+      clip: auto;
+      white-space: normal;
     }
   }
 }
 
 .is-menu-open {
-  display: block;
+  background: linear-gradient(
+    0deg,
+    rgba(29, 42, 92, 0.5) 3%,
+    rgb(10, 16, 27) 100%
+  );
+  height: 100%;
+
+  nav {
+    ul {
+      position: initial;
+      overflow: visible;
+      width: auto;
+      height: auto;
+      clip: auto;
+      white-space: normal;
+    }
+  }
+
+  @include breakpoints.and-up(lg) {
+    background: var(--background);
+    height: fit-content;
+  }
 }

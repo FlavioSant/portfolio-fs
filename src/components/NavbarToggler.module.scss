@@ -12,7 +12,10 @@
   border-width: 0;
   font-size: 0;
 
-  position: static;
+  position: absolute;
+  top: calc(1rem + 4px);
+  right: 0.5rem;
+
   width: 35px;
   height: 35px;
   padding: 5px;

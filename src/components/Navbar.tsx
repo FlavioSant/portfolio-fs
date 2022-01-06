@@ -10,17 +10,26 @@ export const Navbar: React.FC = () => {
 
   return (
     <header>
-      <div className={`center-container ${styles['navbar-container']}`}>
-        <figure className={styles['navbar-logo']}>
-          <Image src="/logo.svg" width={70} height={70} alt="Logo" />
-        </figure>
+      <div
+        className={`${styles['navbar-container']} ${
+          isMenuOpen ? styles['is-menu-open'] : ''
+        }`}
+      >
+        <div className={`center-container`}>
+          <nav className={styles['navbar-navigation-container']}>
+            <figure
+              className={styles['navbar-logo']}
+              onClick={() => scrollTo({ top: 0 })}
+            >
+              <Image
+                src="/logo.svg"
+                width={70}
+                height={70}
+                alt="Logo"
+                title="Flávio Santos | Dev"
+              />
+            </figure>
 
-        <div
-          className={`${styles['navbar-nav-overlay']} ${
-            isMenuOpen ? styles['is-menu-open'] : ''
-          }`}
-        >
-          <nav className={styles['nav-container']}>
             <ul>
               <NavbarItem href="#hero" label="HOME" />
               <NavbarItem href="#about" label="SOBRE" />
@@ -29,12 +38,12 @@ export const Navbar: React.FC = () => {
               <NavbarItem href="#" label="CONTATO" />
             </ul>
           </nav>
-        </div>
 
-        <NavbarToggler
-          isMenuOpen={isMenuOpen}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        />
+          <NavbarToggler
+            isMenuOpen={isMenuOpen}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          />
+        </div>
       </div>
     </header>
   );
