@@ -22,8 +22,8 @@ export const Navbar: React.FC = () => {
         >
           <nav className={styles['nav-container']}>
             <ul>
-              <NavbarItem href="#" label="HOME" />
-              <NavbarItem href="#" label="SOBRE" />
+              <NavbarItem href="#hero" label="HOME" />
+              <NavbarItem href="#about" label="SOBRE" />
               <NavbarItem href="#" label="HABILIDADES" />
               <NavbarItem href="#" label="PROJETOS" />
               <NavbarItem href="#" label="CONTATO" />
