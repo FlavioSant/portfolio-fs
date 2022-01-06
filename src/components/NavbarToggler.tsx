@@ -11,7 +11,9 @@ export const NavbarToggler: React.FC<NavbarTogglerProps> = ({
 }) => {
   return (
     <button
+      aria-label="Clique para abrir/fechar o menu."
       type="button"
+      title="abrir/fechar menu"
       className={`${styles['toggler-button']} ${
         isMenuOpen ? styles['is-menu-open'] : ''
       }`}

@@ -12,8 +12,10 @@ export default class MyDocument extends Document {
           />
 
           <meta charSet="utf-8" />
+          <meta name="theme-color" content="#f59e0b" />
           <meta name="keywords" content="Flavio Santos" />
           <meta name="title" content="Flavio Santos" />
+          <meta name="description" content="Portfolio Flávio Santos | Dev" />
 
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="pt_BR" />
