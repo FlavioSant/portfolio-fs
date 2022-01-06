@@ -1,0 +1,88 @@
+@use '../styles/breakpoints.scss';
+
+@keyframes openedMenuBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.navbar-logo {
+  width: 42px;
+  height: 42px;
+  z-index: 2;
+
+  @include breakpoints.and-up(lg) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.navbar-nav-overlay {
+  display: none;
+  animation: openedMenuBackground 0.375s;
+  background: linear-gradient(
+    0deg,
+    rgba(29, 42, 92, 0.25) 20%,
+    rgba(245, 246, 250, 0) 100%
+  );
+  backdrop-filter: blur(0.5px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  @include breakpoints.and-up(lg) {
+    display: block;
+    background: transparent;
+    position: initial;
+    width: fit-content;
+  }
+}
+
+.nav-container {
+  position: relative;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.675rem;
+    border-top: 1px solid var(--primary);
+
+    padding-top: 1rem;
+
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+
+    @include breakpoints.and-up(lg) {
+      flex-direction: row;
+      gap: 1.5rem;
+      position: initial;
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+}
+
+.is-menu-open {
+  display: block;
+}
