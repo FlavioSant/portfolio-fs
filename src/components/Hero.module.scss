@@ -1,0 +1,80 @@
+@use '../styles/breakpoints.scss';
+
+.hero-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem 0.5rem;
+
+  @include breakpoints.and-up(lg) {
+    align-items: center;
+    flex-direction: row;
+    padding: 10rem 0.5rem;
+  }
+}
+
+.hero-section-description {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+  h1 {
+    color: var(--text);
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  span {
+    color: var(--primary);
+  }
+
+  .sub-title {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+
+  p {
+    color: var(--text);
+    line-height: 1.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+  }
+}
+
+.hero-section-description-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+  margin-top: 2.5rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  @include breakpoints.and-up(lg) {
+    justify-content: flex-start;
+    margin-top: 5rem;
+  }
+}
+
+.hero-section-ilustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+
+  @include breakpoints.and-up(lg) {
+    justify-content: flex-end;
+  }
+}
