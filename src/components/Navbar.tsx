@@ -31,11 +31,31 @@ export const Navbar: React.FC = () => {
             </figure>
 
             <ul>
-              <NavbarItem href="#hero" label="HOME" />
-              <NavbarItem href="#about" label="SOBRE" />
-              <NavbarItem href="#" label="HABILIDADES" />
-              <NavbarItem href="#" label="PROJETOS" />
-              <NavbarItem href="#" label="CONTATO" />
+              <NavbarItem
+                href="#home"
+                label="HOME"
+                onClick={() => setIsMenuOpen(false)}
+              />
+              <NavbarItem
+                href="#sobre"
+                label="SOBRE"
+                onClick={() => setIsMenuOpen(false)}
+              />
+              <NavbarItem
+                href="#habilidades"
+                label="HABILIDADES"
+                onClick={() => setIsMenuOpen(false)}
+              />
+              <NavbarItem
+                href="#projetos"
+                label="PROJETOS"
+                onClick={() => setIsMenuOpen(false)}
+              />
+              <NavbarItem
+                href="#contato"
+                label="CONTATO"
+                onClick={() => setIsMenuOpen(false)}
+              />
             </ul>
           </nav>
 

@@ -4,7 +4,7 @@ import styles from './About.module.scss';
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className={styles['about-section']}>
+    <section id="sobre" className={styles['about-section']}>
       <div className="center-container">
         <div className={styles['about-section-content']}>
           <figure className={styles['about-section-photo']}>

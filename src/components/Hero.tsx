@@ -5,7 +5,7 @@ import styles from './Hero.module.scss';
 
 export const Hero: React.FC = () => {
   return (
-    <section id="hero">
+    <section id="home">
       <div className="center-container">
         <div className={styles['hero-section-content']}>
           <article className={styles['hero-section-description']}>
