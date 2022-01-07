@@ -2,18 +2,21 @@ import styles from './ContactForm.module.scss';
 
 export const ContactForm: React.FC = () => {
   return (
-    <form className={styles['contact-form-container']}>
+    <form
+      action="mailto:flaviohenrique_santos@hotmail.com"
+      className={styles['contact-form-container']}
+    >
       <label htmlFor="name">
         Nome
         <input type="text" id="name" name="name" />
       </label>
-      <label htmlFor="email">
-        E-mail
-        <input type="email" id="email" name="email" />
+      <label htmlFor="subject">
+        Assunto
+        <input type="text" id="subject" name="subject" />
       </label>
-      <label htmlFor="message">
+      <label htmlFor="body">
         Mensagem
-        <textarea name="message" id="message" cols={30} rows={10} />
+        <textarea name="body" id="body" cols={30} rows={10} />
       </label>
       <button type="submit">ENVIAR</button>
     </form>
