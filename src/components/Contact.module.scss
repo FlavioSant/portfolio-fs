@@ -28,8 +28,10 @@
     margin: 0;
   }
 
-  p,
-  a {
+  p {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
     color: var(--text);
     line-height: 1.8rem;
     font-size: 1rem;
@@ -37,9 +39,12 @@
   }
 
   a {
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
+    color: inherit;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--primary);
+    }
   }
 }
 

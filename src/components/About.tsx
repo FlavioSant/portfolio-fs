@@ -28,11 +28,16 @@ export const About: React.FC = () => {
               pela instituição Senac.
               <br />
               <br />
-              Atualmente continuo estudando programação e inglês para melhorar
-              minhas habilidades.
+              Atualmente trabalho como desenvolvedor web e continuo estudando
+              programação e inglês para melhorar minhas habilidades.
             </p>
 
-            <a href="#" download="Currículo.pdf" target="_blank">
+            <a
+              href="./curriculo/curriculo-flavio-santos.pdf"
+              download="curriculo-flavio-santos.pdf"
+              target="_blank"
+              title="Clique para fazer download do currículo."
+            >
               DOWNLOAD CV
             </a>
           </article>

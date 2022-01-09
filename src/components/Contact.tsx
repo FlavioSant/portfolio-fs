@@ -6,8 +6,10 @@ import {
   FiMail,
   FiPhone,
 } from 'react-icons/fi';
-import styles from './Contact.module.scss';
+import { FaWhatsapp } from 'react-icons/fa';
 import { ContactForm } from './ContactForm';
+
+import styles from './Contact.module.scss';
 
 export const Contact: React.FC = () => {
   return (
@@ -19,14 +21,21 @@ export const Contact: React.FC = () => {
             <p>Entre em contato, envie-me uma mensagem!</p>
 
             <div>
-              <a href="https://api.whatsapp.com/send?l=pt_BR&phone=5514991179995&text=Olá, estou entrando em contato pelo seu portfólio.">
+              <p>
                 <FiPhone size={18} />
                 +55 (14) 99117-9995
-              </a>
-              <a href="mailto:flaviohenrique_santos@hotmail.com?subject=Contato">
+                <a
+                  aria-label="Entre em contato pelo whatsapp."
+                  href="https://api.whatsapp.com/send?l=pt_BR&phone=5514991179995&text=Olá, estou entrando em contato pelo seu portfólio."
+                  title="Clique para entrar em contato pelo whatsapp."
+                >
+                  <FaWhatsapp size={18} />
+                </a>
+              </p>
+              <p>
                 <FiMail size={18} />
                 flaviohenrique_santos@hotmail.com
-              </a>
+              </p>
             </div>
 
             <div className={styles['contact-section-description-icons']}>
