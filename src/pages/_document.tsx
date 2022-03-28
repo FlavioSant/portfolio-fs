@@ -32,6 +32,10 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Contrate um desenvolvedor web profissional. Criando layouts modernos, soluções interativas e manutenção de sites."
           />
+          <meta
+            property="og:image"
+            content="https://flaviosantos.dev/photo.jpg"
+          />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="flaviosantos.dev" />
@@ -46,7 +50,7 @@ export default class MyDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://flaviosantos.dev/_next/image?url=%2Fphoto.jpg&w=384&q=75"
+            content="https://flaviosantos.dev/photo.jpg"
           />
         </Head>
         <body>
