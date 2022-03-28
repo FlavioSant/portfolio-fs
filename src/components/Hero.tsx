@@ -60,8 +60,8 @@ export const Hero: React.FC = () => {
           <figure className={styles['hero-section-ilustration']}>
             <Image
               src="/ilustration.svg"
-              width={454}
-              height={411}
+              width={414}
+              height={361}
               alt="Ilustração de um programador"
               layout="intrinsic"
             />

@@ -35,6 +35,7 @@ const Home: NextPage<HomeProps> = ({ projects }) => {
       <Head>
         <title>Flávio Santos | Dev</title>
         <link rel="icon" href="static/favicon.ico" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </Head>
       <Navbar />
       <Hero />
