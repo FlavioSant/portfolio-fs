@@ -1,15 +1,16 @@
+@use '../styles/colors.scss';
 @use '../styles/breakpoints.scss';
 
 .hero-section-content {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  padding: 7rem 0.5rem;
+  padding: 7rem 0.75rem;
 
   @include breakpoints.and-up(lg) {
     align-items: center;
     flex-direction: row;
-    padding: 10rem 0.5rem;
+    padding: 10rem 0;
   }
 }
 
@@ -18,28 +19,8 @@
   flex-direction: column;
   flex: 2;
 
-  h1 {
-    color: var(--text);
-    font-size: 2.25rem;
-    font-weight: 500;
-    margin: 0;
-  }
-
-  span {
-    color: var(--primary);
-  }
-
-  .sub-title {
-    font-size: 0.875rem;
-    font-weight: 300;
-  }
-
   p {
-    color: var(--text);
     line-height: 1.8rem;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 1.5rem;
   }
 }
 
@@ -54,11 +35,11 @@
     align-items: center;
     justify-content: center;
 
-    color: var(--text);
+    color: colors.$gray-50;
     transition: color 0.2s;
 
     &:hover {
-      color: var(--primary);
+      color: colors.$yellow;
     }
   }
 

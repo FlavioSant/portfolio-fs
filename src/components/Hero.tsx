@@ -3,19 +3,22 @@ import { FiFacebook, FiInstagram, FiGithub, FiLinkedin } from 'react-icons/fi';
 
 import styles from './Hero.module.scss';
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
     <section id="home">
       <div className="center-container">
         <div className={styles['hero-section-content']}>
           <article className={styles['hero-section-description']}>
-            <h1>
-              Olá, <br /> me chamo <span>Flávio Santos.</span>
+            <h1 className="heading1 text-gray-100 m-0">
+              Olá, <br /> me chamo{' '}
+              <span className="text-yellow">Flávio Santos.</span>
             </h1>
-            <span className={styles['sub-title']}>
+
+            <span className="paragraph3 text-yellow">
               Desenvolvedor Front-end.
             </span>
-            <p>
+
+            <p className="paragraph1 text-gray-50 mt-6">
               Sempre gostei muito da área de tecnologia, me identifiquei melhor
               como desenvolvedor front-end, pois gosto de criar novos layouts e
               trabalhar com a parte visual das aplicações.
@@ -28,7 +31,7 @@ export const Hero: React.FC = () => {
                 target="_blank"
                 title="Facebok"
               >
-                <FiFacebook size={22} />
+                <FiFacebook size={24} />
               </a>
               <a
                 href="https://www.instagram.com/flavio_santos_"
@@ -36,7 +39,7 @@ export const Hero: React.FC = () => {
                 target="_blank"
                 title="Instagram"
               >
-                <FiInstagram size={22} />
+                <FiInstagram size={24} />
               </a>
               <a
                 href="https://github.com/FlavioSant"
@@ -44,7 +47,7 @@ export const Hero: React.FC = () => {
                 target="_blank"
                 title="GitHub"
               >
-                <FiGithub size={22} />
+                <FiGithub size={24} />
               </a>
               <a
                 href="https://www.linkedin.com/in/flavio-santos-75487a164"
@@ -52,7 +55,7 @@ export const Hero: React.FC = () => {
                 target="_blank"
                 title="Linkedin"
               >
-                <FiLinkedin size={22} />
+                <FiLinkedin size={24} />
               </a>
             </div>
           </article>

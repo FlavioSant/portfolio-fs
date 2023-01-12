@@ -1,21 +1,23 @@
 import Image from 'next/image';
 import { useState } from 'react';
+import classNames from 'classnames';
 import { NavbarItem } from './NavbarItem';
 import { NavbarToggler } from './NavbarToggler';
 
 import styles from './Navbar.module.scss';
 
-export const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export const Navbar = () => {
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   return (
     <header>
       <div
-        className={`${styles['navbar-container']} ${
-          isMenuOpen ? styles['is-menu-open'] : ''
-        }`}
+        className={classNames(
+          styles['navbar-container'],
+          isMobileOpen ? styles['is-menu-open'] : '',
+        )}
       >
-        <div className={`center-container`}>
+        <div className="center-container">
           <nav className={styles['navbar-navigation-container']}>
             <figure
               className={styles['navbar-logo']}
@@ -34,34 +36,34 @@ export const Navbar: React.FC = () => {
               <NavbarItem
                 href="#home"
                 label="HOME"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMobileOpen(false)}
               />
               <NavbarItem
                 href="#sobre"
                 label="SOBRE"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMobileOpen(false)}
               />
               <NavbarItem
                 href="#habilidades"
                 label="HABILIDADES"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMobileOpen(false)}
               />
               <NavbarItem
                 href="#projetos"
                 label="PROJETOS"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMobileOpen(false)}
               />
               <NavbarItem
                 href="#contato"
                 label="CONTATO"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => setIsMobileOpen(false)}
               />
             </ul>
           </nav>
 
           <NavbarToggler
-            isMenuOpen={isMenuOpen}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            isMenuOpen={isMobileOpen}
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
           />
         </div>
       </div>

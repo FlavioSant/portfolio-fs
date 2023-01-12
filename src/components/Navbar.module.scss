@@ -1,3 +1,4 @@
+@use '../styles/colors.scss';
 @use '../styles/breakpoints.scss';
 
 @keyframes openedMenu {
@@ -12,13 +13,13 @@
 .navbar-container {
   display: flex;
 
-  background: var(--background);
+  background: colors.$gray-900;
 
   position: fixed;
   top: 0;
   left: 0;
 
-  padding: 1rem 0.5rem;
+  padding: 1rem 0.75rem;
 
   width: 100%;
   height: fit-content;
@@ -55,7 +56,7 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
 
-    border-top: 1px solid var(--primary);
+    border-top: 1px solid colors.$yellow;
     margin-top: 1rem;
     padding-top: 1rem;
   }
@@ -82,11 +83,7 @@
 }
 
 .is-menu-open {
-  background: linear-gradient(
-    0deg,
-    rgba(29, 42, 92, 0.5) 3%,
-    rgb(10, 16, 27) 100%
-  );
+  background: rgba(10, 16, 27, 0.97);
   height: 100%;
 
   nav {
@@ -101,7 +98,7 @@
   }
 
   @include breakpoints.and-up(lg) {
-    background: var(--background);
+    background: colors.$gray-900;
     height: fit-content;
   }
 }

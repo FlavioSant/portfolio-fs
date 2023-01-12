@@ -1,3 +1,4 @@
+@use '../styles/colors.scss';
 @use '../styles/breakpoints.scss';
 
 .contact-section-content {
@@ -5,13 +6,12 @@
   flex-direction: column;
   gap: 2rem;
 
-  padding: 5rem 0.5rem;
+  padding: 5rem 0.75rem;
 
   @include breakpoints.and-up(lg) {
-    align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 7rem 0.5rem;
+    padding: 7rem 0;
   }
 }
 
@@ -21,29 +21,14 @@
   row-gap: 2.5rem;
   flex: 1;
 
-  h1 {
-    color: var(--primary);
-    font-size: 2.25rem;
-    font-weight: 500;
-    margin: 0;
-  }
-
-  p {
+  a {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
-    color: var(--text);
-    line-height: 1.8rem;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  a {
-    color: inherit;
     transition: color 0.2s;
 
     &:hover {
-      color: var(--primary);
+      color: colors.$yellow;
     }
   }
 }
@@ -57,11 +42,10 @@
     align-items: center;
     justify-content: center;
 
-    color: var(--text);
     transition: color 0.2s;
 
     &:hover {
-      color: var(--primary);
+      color: colors.$yellow;
     }
   }
 }

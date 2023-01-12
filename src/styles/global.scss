@@ -1,12 +1,27 @@
+@use './colors.scss' as *;
+@use './spacing.scss';
 @use './breakpoints.scss';
+@use './utils/colors.utilities.scss';
+@use './utils/typography.utilities.scss';
 @import '../../node_modules/normalize.css/normalize.css';
 
 :root {
-  --primary: #f59e0b;
-  --text: #f1f1f1;
-  --background: #101621;
-  --background-dark: #0a101b;
-  --white: #ffffff;
+  --white: #{$white};
+  --black: #{$black};
+
+  --gray-50: #{$gray-50};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+  --gray-1000: #{$gray-1000};
+
+  --yellow: #{$yellow};
 }
 
 * {
@@ -40,7 +55,7 @@ div#__next {
 }
 
 body {
-  background: var(--background);
+  background: var(--gray-900);
   font-family: 'Ubuntu', sans-serif;
   -webkit-font-smoothing: antialiased;
 }

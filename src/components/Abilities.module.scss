@@ -1,12 +1,10 @@
-.abilities-section-content {
-  padding: 7rem 0.5rem;
+@use '../styles/breakpoints.scss';
 
-  h1 {
-    color: var(--primary);
-    font-size: 2.25rem;
-    font-weight: 500;
-    margin: 0;
-    text-align: center;
+.abilities-section-content {
+  padding: 7rem 0.75rem;
+
+  @include breakpoints.and-up(lg) {
+    padding: 7rem 0;
   }
 }
 
@@ -23,13 +21,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 0.3rem;
+    row-gap: 0.5rem;
 
     min-width: 150px;
-
-    p {
-      color: var(--text);
-      line-height: 1.9rem;
-    }
   }
 }

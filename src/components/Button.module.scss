@@ -1,0 +1,35 @@
+@use 'sass:map';
+@use '../styles/colors.scss';
+@use '../styles/typography.scss';
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+
+  background-color: colors.$yellow;
+
+  color: colors.$gray-900;
+  font-size: map.get(typography.$sizes, 'paragraph2');
+  font-weight: map.get(typography.$weights, 'paragraph2');
+  line-height: map.get(typography.$line-heights, 'paragraph2');
+
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  transition: filter 0.2s, background 0.2s, color 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.85;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline-width: 2px;
+    outline-offset: 4px;
+  }
+}

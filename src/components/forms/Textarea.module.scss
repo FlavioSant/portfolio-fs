@@ -1,0 +1,59 @@
+@use 'sass:map';
+@use '../../styles/colors.scss';
+@use '../../styles/typography.scss';
+
+.textarea {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.25rem;
+  width: 100%;
+}
+
+.textarea-field {
+  display: flex;
+  align-items: center;
+
+  background: colors.$gray-800;
+  border: 1px solid colors.$gray-700;
+  border-radius: 0.5rem;
+
+  color: colors.$gray-100;
+  font-size: map.get(typography.$sizes, 'paragraph1');
+  font-weight: map.get(typography.$weights, 'paragraph1');
+  line-height: map.get(typography.$line-heights, 'paragraph1');
+
+  padding: 0.5rem 0.75rem;
+  overflow: hidden;
+  outline: 0;
+
+  width: 100%;
+  min-height: 120px;
+  max-height: 250px;
+
+  resize: vertical;
+
+  &:not(:disabled):hover {
+    border-color: colors.$gray-600;
+  }
+
+  &::placeholder {
+    color: colors.$gray-300;
+  }
+
+  &:focus {
+    border-color: colors.$gray-600;
+  }
+
+  &:disabled {
+    background: colors.$gray-800;
+  }
+
+  &:-webkit-autofill {
+    box-shadow: 0 0 0 30px white inset;
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+  }
+}

@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 import styles from './About.module.scss';
 
-export const About: React.FC = () => {
+export const About = () => {
   return (
-    <section id="sobre" className={styles['about-section']}>
+    <section id="sobre" className="bg-gray-1000">
       <div className="center-container">
         <div className={styles['about-section-content']}>
           <figure className={styles['about-section-photo']}>
@@ -15,9 +15,10 @@ export const About: React.FC = () => {
               alt="Flávio Santos"
             />
           </figure>
+
           <article className={styles['about-section-description']}>
-            <h1>Sobre mim</h1>
-            <p>
+            <h1 className="heading1 text-yellow m-0">Sobre mim</h1>
+            <p className="paragraph1 text-gray-50">
               Sou apaixonado pela área da tecnologia desde pequeno, mais
               especificamente em programação e desenvolvimento web.
               <br />
@@ -33,10 +34,11 @@ export const About: React.FC = () => {
             </p>
 
             <a
+              target="_blank"
               href="./curriculo/curriculo-flavio-santos.pdf"
               download="curriculo-flavio-santos.pdf"
-              target="_blank"
               title="Clique para fazer download do currículo."
+              className="px-8 py-3 bg-yellow paragraph2 text-gray-800"
             >
               DOWNLOAD CV
             </a>

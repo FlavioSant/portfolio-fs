@@ -1,0 +1,177 @@
+$spacings: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  7: 1.75rem,
+  8: 2rem,
+  9: 2.25rem,
+  10: 2.5rem,
+  11: 2.75rem,
+  12: 3rem,
+  14: 3.5rem,
+  16: 4rem,
+  20: 5rem,
+  auto: auto,
+);
+
+@each $space, $value in $spacings {
+  // Gaps
+  .gap-#{'' + $space} {
+    gap: $value;
+  }
+
+  .r-gap-#{'' + $space} {
+    row-gap: $value;
+  }
+
+  .c-gap-#{'' + $space} {
+    column-gap: $value;
+  }
+
+  // Margins
+  .m-#{'' + $space} {
+    margin: $value;
+  }
+
+  .ml-#{'' + $space} {
+    margin-left: $value;
+  }
+
+  .mr-#{'' + $space} {
+    margin-right: $value;
+  }
+
+  .mt-#{'' + $space} {
+    margin-top: $value;
+  }
+
+  .mb-#{'' + $space} {
+    margin-bottom: $value;
+  }
+
+  .mx-#{'' + $space} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .my-#{'' + $space} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  // Paddings
+  .p-#{'' + $space} {
+    padding: $value;
+  }
+
+  .pl-#{'' + $space} {
+    padding-left: $value;
+  }
+
+  .pr-#{'' + $space} {
+    padding-right: $value;
+  }
+
+  .pt-#{'' + $space} {
+    padding-top: $value;
+  }
+
+  .pb-#{'' + $space} {
+    padding-bottom: $value;
+  }
+
+  .px-#{'' + $space} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .py-#{'' + $space} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  // Flex
+  .flex-#{'' + $space} {
+    flex: $space;
+  }
+
+  // Grid
+  .col-span-#{'' + $space} {
+    grid-column: span $space;
+  }
+}
+
+// Widths
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-xs {
+  max-width: 20rem; /* 320px */
+}
+.max-w-sm {
+  max-width: 24rem; /* 384px */
+}
+.max-w-md {
+  max-width: 28rem; /* 448px */
+}
+.max-w-lg {
+  max-width: 32rem; /* 512px */
+}
+.max-w-xl {
+  max-width: 36rem; /* 576px */
+}
+.max-w-2xl {
+  max-width: 42rem; /* 672px */
+}
+.max-w-3xl {
+  max-width: 48rem; /* 768px */
+}
+.max-w-4xl {
+  max-width: 56rem; /* 896px */
+}
+.max-w-5xl {
+  max-width: 64rem; /* 1024px */
+}
+.max-w-6xl {
+  max-width: 72rem; /* 1152px */
+}
+.max-w-7xl {
+  max-width: 80rem; /* 1280px */
+}
+.max-w-full {
+  max-width: 100%;
+}
+
+// Heights
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-full {
+  height: 100%;
+}

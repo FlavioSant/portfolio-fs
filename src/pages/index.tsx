@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next';
+import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
@@ -11,25 +11,11 @@ import { Navbar } from '../components/Navbar';
 import { Projetcts } from '../components/Projects';
 import { prismicClient } from '../services/prismic';
 
-export type Project = {
-  uid: string;
-  title: string;
-  url: {
-    link_type: string;
-    url: string;
-  };
-  image: {
-    alt: string;
-    dimensions: { width: number; height: number };
-    url: string;
-  };
-};
-
-type HomeProps = {
+interface HomeProps {
   projects: Project[];
-};
+}
 
-const Home: NextPage<HomeProps> = ({ projects }) => {
+const Home = ({ projects }: HomeProps) => {
   return (
     <>
       <Head>

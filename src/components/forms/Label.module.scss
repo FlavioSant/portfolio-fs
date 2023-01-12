@@ -1,0 +1,10 @@
+@use 'sass:map';
+@use '../../styles/colors.scss';
+@use '../../styles/typography.scss';
+
+.label-container {
+  color: colors.$gray-50;
+  font-size: map.get(typography.$sizes, 'paragraph1');
+  font-weight: map.get(typography.$weights, 'paragraph1');
+  line-height: map.get(typography.$line-heights, 'paragraph1');
+}

@@ -1,64 +1,16 @@
+@use '../styles/colors.scss';
+
 .contact-form-container {
   display: flex;
   flex-direction: column;
   row-gap: 0.675rem;
   flex: 1;
 
-  background: var(--background-dark);
-  box-shadow: 0 0 12px rgba(5, 14, 46, 0.7);
-  border-radius: 0.188rem;
+  background: colors.$gray-1000;
+  box-shadow: 0 0 12px rgba(0, 4, 20, 0.7);
+  border-radius: 0.5rem;
 
   padding: 1.5rem 1rem;
-
-  label {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 0.3rem;
-
-    color: var(--text);
-  }
-
-  input,
-  textarea {
-    border: 0;
-    border-radius: 0.313rem;
-    background: var(--text);
-    color: var(--background);
-    font-size: 1rem;
-    font-weight: 500;
-
-    outline: 0;
-    padding: 0.5rem;
-    width: 100%;
-
-    &:focus {
-      border: 2px solid var(--primary);
-    }
-  }
-
-  input {
-    height: 2.813rem;
-  }
-
-  textarea {
-    max-height: 11.25rem;
-    min-height: 5.625rem;
-    height: 5.625rem;
-    resize: vertical;
-  }
-
-  button {
-    background: var(--primary);
-    border: 0;
-    border-radius: 0.313rem;
-    color: var(--background);
-    font-size: 1rem;
-    font-weight: 500;
-
-    margin-top: 1rem;
-    height: 2.813rem;
-  }
 
   span {
     font-size: 0.8rem;

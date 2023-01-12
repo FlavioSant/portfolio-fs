@@ -2,12 +2,14 @@ import Image from 'next/image';
 
 import styles from './Abilities.module.scss';
 
-export const Abilities: React.FC = () => {
+export const Abilities = () => {
   return (
     <section id="habilidades">
       <div className="center-container">
         <div className={styles['abilities-section-content']}>
-          <h1>Minhas Habilidades</h1>
+          <h1 className="heading1 text-yellow text-center m-0">
+            Minhas Habilidades
+          </h1>
 
           <ul className={styles['abilities-section-list']}>
             <li>
@@ -17,7 +19,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="html-5"
               />
-              <p>HTML</p>
+              <p className="paragraph1 text-gray-50">HTML</p>
             </li>
             <li>
               <Image
@@ -26,7 +28,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="css-3"
               />
-              <p>CSS</p>
+              <p className="paragraph1 text-gray-50">CSS</p>
             </li>
             <li>
               <Image
@@ -35,7 +37,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="javascript"
               />
-              <p>JavaScript</p>
+              <p className="paragraph1 text-gray-50">JavaScript</p>
             </li>
             <li>
               <Image
@@ -44,7 +46,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="typescript"
               />
-              <p>TypeScript</p>
+              <p className="paragraph1 text-gray-50">TypeScript</p>
             </li>
             <li>
               <Image
@@ -53,7 +55,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="nextjs"
               />
-              <p>NextJs</p>
+              <p className="paragraph1 text-gray-50">NextJs</p>
             </li>
             <li>
               <Image
@@ -62,11 +64,11 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="reactjs"
               />
-              <p>ReactJs</p>
+              <p className="paragraph1 text-gray-50">ReactJs</p>
             </li>
             <li>
               <Image src="/icons/sass.svg" width={80} height={80} alt="sass" />
-              <p>Sass</p>
+              <p className="paragraph1 text-gray-50">Sass</p>
             </li>
             <li>
               <Image
@@ -75,7 +77,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="styled-components"
               />
-              <p>Styled Components</p>
+              <p className="paragraph1 text-gray-50">Styled Components</p>
             </li>
             <li>
               <Image
@@ -84,7 +86,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="figma"
               />
-              <p>Figma</p>
+              <p className="paragraph1 text-gray-50">Figma</p>
             </li>
             <li>
               <Image
@@ -93,7 +95,7 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="graphql"
               />
-              <p>GraphQL</p>
+              <p className="paragraph1 text-gray-50">GraphQL</p>
             </li>
             <li>
               <Image
@@ -102,11 +104,11 @@ export const Abilities: React.FC = () => {
                 height={80}
                 alt="docker"
               />
-              <p>Docker</p>
+              <p className="paragraph1 text-gray-50">Docker</p>
             </li>
             <li>
               <Image src="/icons/git.svg" width={80} height={80} alt="git" />
-              <p>Git</p>
+              <p className="paragraph1 text-gray-50">Git</p>
             </li>
           </ul>
         </div>
