@@ -14,21 +14,21 @@ export const Abilities = () => {
           <ul className={styles['abilities-section-list']}>
             <li>
               <Image
-                src="/icons/html-5.svg"
+                src="/icons/reactjs.svg"
                 width={80}
                 height={80}
-                alt="html-5"
+                alt="reactjs"
               />
-              <p className="paragraph1 text-gray-50">HTML</p>
+              <p className="paragraph1 text-gray-50">React</p>
             </li>
             <li>
               <Image
-                src="/icons/css-3.svg"
+                src="/icons/nextjs.svg"
                 width={80}
                 height={80}
-                alt="css-3"
+                alt="nextjs"
               />
-              <p className="paragraph1 text-gray-50">CSS</p>
+              <p className="paragraph1 text-gray-50">NextJS</p>
             </li>
             <li>
               <Image
@@ -46,25 +46,25 @@ export const Abilities = () => {
                 height={80}
                 alt="typescript"
               />
-              <p className="paragraph1 text-gray-50">TypeScript</p>
+              <p className="paragraph1 text-gray-50">Typescript</p>
             </li>
             <li>
               <Image
-                src="/icons/nextjs.svg"
+                src="/icons/html-5.svg"
                 width={80}
                 height={80}
-                alt="nextjs"
+                alt="html-5"
               />
-              <p className="paragraph1 text-gray-50">NextJs</p>
+              <p className="paragraph1 text-gray-50">HTML</p>
             </li>
             <li>
               <Image
-                src="/icons/reactjs.svg"
+                src="/icons/css-3.svg"
                 width={80}
                 height={80}
-                alt="reactjs"
+                alt="css-3"
               />
-              <p className="paragraph1 text-gray-50">ReactJs</p>
+              <p className="paragraph1 text-gray-50">CSS</p>
             </li>
             <li>
               <Image src="/icons/sass.svg" width={80} height={80} alt="sass" />

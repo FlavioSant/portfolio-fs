@@ -23,14 +23,14 @@ export const About = () => {
               especificamente em programação e desenvolvimento web.
               <br />
               <br />
-              Tenho 24 anos, nascido e criado em Bauru, cidade do interior de
+              Tenho 26 anos, nascido e criado em Bauru, cidade do interior de
               São Paulo. Sou formado no curso de Ciência da Computação pela
               universidade UNIP, também possuo um diploma técnico em informática
               pela instituição Senac.
               <br />
               <br />
-              Atualmente trabalho como desenvolvedor web e continuo estudando
-              programação e inglês para melhorar minhas habilidades.
+              Atualmente trabalho como desenvolvedor web front-end e continuo
+              estudando programação e inglês para melhorar minhas habilidades.
             </p>
 
             <a
