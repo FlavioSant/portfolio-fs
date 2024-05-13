@@ -5,7 +5,6 @@ import {
   FiLinkedin,
   FiMail,
 } from 'react-icons/fi';
-import { FaWhatsapp } from 'react-icons/fa';
 import { ContactForm } from './ContactForm';
 
 import styles from './Contact.module.scss';
@@ -22,15 +21,6 @@ export const Contact = () => {
             </p>
 
             <div>
-              <a
-                className="text-gray-50"
-                aria-label="Entre em contato pelo whatsapp."
-                href="https://api.whatsapp.com/send?l=pt_BR&phone=5514991179995&text=Olá, estou entrando em contato pelo seu portfólio."
-                title="Clique para entrar em contato pelo whatsapp."
-              >
-                <FaWhatsapp size={20} />
-                +55 (14) 99117-9995
-              </a>
               <a
                 className="text-gray-50 mt-3"
                 aria-label="Entre em contato por email"
